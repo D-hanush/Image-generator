@@ -1,13 +1,13 @@
 import requests
 
-API_KEY = "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"
+API_KEY = "hf_geSuDCwDhDNYbuqTdZfbVlcUk********" #Your API KEY
 
 def img_gen(prompt, output_file):
-    # API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
+    # API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5" #generates best pic but slow
 
-    API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+    API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0" #fast but generates less quality pic
 
-    # API_URL = "https://api-inference.huggingface.co/models/ARDICAI/stable-diffusion-2-1-finetuned"
+    # API_URL = "https://api-inference.huggingface.co/models/ARDICAI/stable-diffusion-2-1-finetuned" #optional link
 
     headers = {"Authorization": f"Bearer {API_KEY}"}
 
